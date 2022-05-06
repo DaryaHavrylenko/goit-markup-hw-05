@@ -124,7 +124,7 @@ nav,
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -618,8 +618,28 @@ margin-right: 30px;
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
+.overlay-holder {
+  position: relative;
+  height: 294px;
+  width: 370px;
+ overflow: hidden;
+}
+.overlay-annimation {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  transition: transform 250ms var(--timing-function);
+}
+.text-overlay {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.icon:hover .overlay-annimation {
+  transform: translateY(-100%);
+}
 /* IMG */
 
 img {
