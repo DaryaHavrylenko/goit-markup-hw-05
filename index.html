@@ -48,7 +48,7 @@
       <section class="section-hero overlay">
         <div class="container">
           <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button prymery">Заказать услугу</button>
+          <button type="button" class="button prymery" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -322,6 +322,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close" data-modal-close>
+          <svg class="icon-close" width="18px" height="18px">
+            <use href="./images/icons.svg#close3"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
