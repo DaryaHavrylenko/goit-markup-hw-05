@@ -113,6 +113,7 @@ nav,
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  
 }
 
 .site-nav .link.current {
@@ -162,6 +163,7 @@ align-items: center;
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+ 
 }
 /* ИНТЕРАКТИВНЫЕ ИКОНКИ В ХЕДЕРЕ */
 
@@ -170,6 +172,7 @@ align-items: center;
   height: 16px;
   fill: rgba(117, 117, 117, 1);
   margin-right: 10px;
+  transition: fill 250ms var(--timing-function);
 }
 
 .mobile:hover .icon-mobile,
@@ -182,6 +185,7 @@ align-items: center;
   height: 12px;
   fill: rgba(117, 117, 117, 1);
   margin-right: 10px;
+  transition: fill 250ms var(--timing-function);
 }
 
 .envelope:hover .icon-envelope,
@@ -521,8 +525,8 @@ width: 44px;
 height: 44px;
 border-radius: 50%;
 
-transition: color 250ms var(--timing-function),
- background-color 250ms var(--timing-function);
+transition: border-radius 250ms var(--timing-function),
+background-color 250ms var(--timing-function);
 }
 .item-social {
   display: flex;
@@ -535,14 +539,19 @@ transition: color 250ms var(--timing-function),
 }
 .social-icon {
 fill: #AFB1B8;
+background-color: transparent;
+
   width: 20px;
   height: 20px;
+  transition: fill 250ms var(--timing-function);
 }
-.social:hover {
+.social:hover,
+.social:focus {
   background-color: #2196F3;
   border-radius: 50%;
 }
-.social:hover .social-icon {
+.social:hover .social-icon,
+.social:focus .social-icon {
   fill: #ffffff;
 }
 
@@ -566,7 +575,7 @@ fill: #AFB1B8;
  
   border: 1px solid rgba(175, 177, 184, 1);
 
-  transition: fill 250ms var(--timing-function),
+  transition: 
   border 250ms var(--timing-function);
  
 }
@@ -575,7 +584,7 @@ fill: #AFB1B8;
   fill: rgba(175, 177, 184, 1);
   width: 106px;
   height: 60px;
-  
+  transition: fill 250ms var(--timing-function);
 }
 
 .clients:hover .clients-icon,
@@ -869,6 +878,7 @@ a {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  border-radius: 4px;
 }
 
 .button.secondary:hover,
